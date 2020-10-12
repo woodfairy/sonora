@@ -17,7 +17,7 @@
  *
  * Any extensions to this module can be done by adding new options and / or exposing more methods via the prototype API
  */
-function (global) {
+(function (global) {
 	let Sonora = function (data) {
         	return new Sonora.init(data);
         };
