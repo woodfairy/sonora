@@ -8,7 +8,6 @@ const request = Sonora({
   url: 'https://example.com'
 });
 ```
-There are more options you can pass to the Sonora constructor in order to configure the request.
 If you want to send the request, just call
 ```javascript
 request.send();
@@ -17,11 +16,12 @@ There is also a shortcut (it is actually not shorter, but I like it)
 ```javascript
 const request = $onora({url: 'https://example.com'});
 ```
+There are more options you can pass to the Sonora constructor in order to configure the request.
 ```javascript
 /**
  * Makes XMLHTTPRequest more convenient
  * usage is similar to jQuery ajax
- * You can just call: __request(options)
+ * You can just call: $onora(options)
  * where options is an object which contains the needed information for the request
  * options = {
  *     method: 'GET' | 'POST' | 'PUT' | 'UPDATE' | 'DELETE' (etc.),
