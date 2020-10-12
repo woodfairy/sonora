@@ -38,3 +38,7 @@ const request = $onora({url: 'https://example.com'});
  * Any extensions to this module can be done by adding new options and / or exposing more methods via the prototype API
  */
 ```
+
+
+#### NOTICE
+You may need to use polyfills for browsers other than Chrome.
