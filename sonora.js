@@ -1,4 +1,23 @@
-(function (global) {
+/**
+ * Makes XMLHTTPRequest more convenient
+ * usage is similar to jQuery ajax
+ * You can just call: __request(options)
+ * where options is an object which contains the needed information for the request
+ * options = {
+ *     method: 'GET' | 'POST' | 'PUT' | 'UPDATE' | 'DELETE' (etc.),
+ *     headers: {
+ *         <header>: <value>
+ *     },
+ *     url: url/to/target,
+ *     payload: <arbitrary request payload, should match Content-Type>,
+ *     success: function - success callback - 1st argument is the request object,
+ *     error: function - error callback - 1st argument is the request object,
+ *     always: function - callback - always executed - 1st argument is the request object
+ * }
+ *
+ * Any extensions to this module can be done by adding new options and / or exposing more methods via the prototype API
+ */
+function (global) {
 	let Sonora = function (data) {
         	return new Sonora.init(data);
         };
