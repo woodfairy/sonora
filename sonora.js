@@ -29,7 +29,7 @@
         const registerCallbacks = (request, success, error, always) => {
             request.onreadystatechange = _ => {
                 if(request.readyState === 4) {
-                    if (request.status === 200) {
+                    if (request.status == 200) {
                         if (typeof success !== 'function') {
                             console.error('Success callback is not a function. Bailing.');
 			    return;
