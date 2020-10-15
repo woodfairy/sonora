@@ -1,7 +1,7 @@
 /**
  * Makes XMLHTTPRequest more convenient
  * usage is similar to jQuery ajax
- * You can just call: __request(options)
+ * You can just call: Sonora(options)
  * where options is an object which contains the needed information for the request
  * options = {
  *     method: 'GET' | 'POST' | 'PUT' | 'UPDATE' | 'DELETE' (etc.),
